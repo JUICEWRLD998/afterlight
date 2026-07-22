@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:letters": "tsx scripts/build-letters.ts",
+    "build:pdf": "tsx scripts/build-pdf.ts"
   },
   "dependencies": {
     "@unlayer/react-elements": "^0.1.20",
