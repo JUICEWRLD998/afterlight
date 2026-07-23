@@ -227,9 +227,9 @@ Confirm exact names/props from `@unlayer/react-elements` before writing componen
 - [ ] Real, tasteful copy — this is judged as much as code.
 
 ### Phase 3.5 — AI compose (supporting feature)
-- [ ] `src/ai/compose.ts`: OpenRouter client → `google/gemini-2.5-flash`, prompt built from (recipient, occasion, memories, tone) → returns letter body HTML for `LetterData.body`.
-- [ ] Env-only key (`OPENROUTER_API_KEY`); **graceful no-key fallback** (compose disabled, examples still render).
-- [ ] Small, clearly-secondary "Compose with AI" panel in the demo that fills the letter, then hands off to the same Elements render. **Exit:** typing a few details drafts a letter that renders to all three surfaces.
+- [x] `src/ai/compose.ts`: OpenRouter client → `google/gemini-2.5-flash`, prompt built from (recipient, occasion, memories, tone) → returns letter body HTML for `LetterData.body`.
+- [x] Env-only key (`OPENROUTER_API_KEY`); **graceful no-key fallback** (compose disabled, examples still render).
+- [x] Small, clearly-secondary "Compose with AI" panel in the demo that fills the letter, then hands off to the same Elements render. **Exit:** typing a few details drafts a letter that renders to all three surfaces.
 
 ### Phase 4 — The demo site (execution / wow)
 - [ ] Landing page: concept + gallery of the letters.
