@@ -11,6 +11,8 @@ async function build() {
 
   const letters: LetterData[] = [
     (await import("../src/letters/data/to-my-daughter")).default,
+    (await import("../src/letters/data/open-when-sad")).default,
+    (await import("../src/letters/data/grandmothers-recipe")).default,
   ]
 
   for (const letter of letters) {
@@ -29,7 +31,7 @@ async function build() {
     console.log(`✓ ${letter.slug}: email(${emailHtml.length}) page(${pageHtml.length}) doc(${docHtml.length}) json(${Object.keys(json).join(",")}) plain(${plain.length})`)
   }
 
-  console.log("\nPhase 2 build PASSED — all artifacts written to out/")
+  console.log("\nPhase 3 build PASSED — all artifacts written to out/")
 }
 
 build().catch(e => { console.error(e); process.exit(1) })
